@@ -1,0 +1,38 @@
+{
+  "name": "sar-fullstack",
+  "version": "1.0.0",
+  "description": "Search and Rescue Full-Stack Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
+    "install-client": "cd client && npm install"
+  },
+  "keywords": [
+    "search",
+    "rescue",
+    "fullstack",
+    "react",
+    "express"
+  ],
+  "author": "SAR Team",
+  "license": "MIT",
+  "dependencies": {
+    "@hello-pangea/dnd": "^18.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "path": "^0.12.7",
+    "proj4": "^2.19.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
